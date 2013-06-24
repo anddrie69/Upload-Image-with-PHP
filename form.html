@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="upload_foto.php" method="post" enctype="multipart/form-data">
+<input type="hidden" name="MAX FILE SIZE" value="3000000">
+<input type="hidden" name="nim" id="nim" value="<?php echo $row_mahasiswa['nim'];?>" />
+<table width="468" border="0" align="center">
+  <tr>
+    <td colspan="5" align="center">UPLOAD FOTO</td>
+  </tr>
+  <tr>
+    <td width="121">Upload foto</td>
+    <td width="3">:</td>
+    <td width="189" colspan="3">
+      <input type="file" name="foto" size="30" accept="image/jpeg" id="foto" />
+      
+      </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="submit" name="submit" id="submit" value="Simpan" />
+    </td>
+    <td colspan="3">&nbsp;</td>
+    <td width="133">&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
